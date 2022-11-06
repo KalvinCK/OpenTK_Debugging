@@ -1,7 +1,4 @@
-using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL4;
-using OpenTK.Windowing.GraphicsLibraryFramework;
-using OpenTK.Windowing.Common;
 
 namespace Open_GLTK
 {
@@ -31,7 +28,7 @@ namespace Open_GLTK
             }
             
         }
-        public static void Debug(DebugSource source, DebugType type, int id, DebugSeverity severity, int length, IntPtr message, IntPtr userParam)
+        private static void Debug(DebugSource source, DebugType type, int id, DebugSeverity severity, int length, IntPtr message, IntPtr userParam)
         {
             // ignorar códigos de erro/aviso não significativos
             if (id == 131169 || id == 131185 || id == 131218 || id == 131204) return;
