@@ -48,6 +48,7 @@ namespace Open_GLTK
                 case DebugSource.DebugSourceThirdParty:      Console.WriteLine("Source: Third Party");      break;
                 case DebugSource.DebugSourceApplication:     Console.WriteLine("Source: Application");      break;
                 case DebugSource.DebugSourceOther:           Console.WriteLine("Source: Other");            break;
+
             } Console.WriteLine();
 
             
@@ -62,17 +63,17 @@ namespace Open_GLTK
                 case DebugType.DebugTypePushGroup:           Console.WriteLine("Type: Push Group");             break;
                 case DebugType.DebugTypePopGroup:            Console.WriteLine("Type: Pop Group");              break;
                 case DebugType.DebugTypeOther:               Console.WriteLine("Type: Other");                  break;
+
             } Console.WriteLine();
 
 
 
             switch (severity)
             {
-
-            case DebugSeverity.DebugSeverityHigh:         Console.WriteLine("Severity: high");                  break;
-            case DebugSeverity.DebugSeverityMedium:       Console.WriteLine("Severity: medium");                break;
-            case DebugSeverity.DebugSeverityLow:          Console.WriteLine("Severity: low");                   break;
-            case DebugSeverity.DebugSeverityNotification: Console.WriteLine("Severity: notification");          break;
+                case DebugSeverity.DebugSeverityHigh:         Console.WriteLine("Severity: high");                  break;
+                case DebugSeverity.DebugSeverityMedium:       Console.WriteLine("Severity: medium");                break;
+                case DebugSeverity.DebugSeverityLow:          Console.WriteLine("Severity: low");                   break;
+                case DebugSeverity.DebugSeverityNotification: Console.WriteLine("Severity: notification");          break;
 
             } Console.WriteLine();
         }
